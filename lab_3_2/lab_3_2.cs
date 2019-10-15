@@ -10,7 +10,7 @@ namespace lab_3_2 {
     class Programm {
         static void Main(string[] args) {
             ///1
-            Console.WriteLine("\n#############1#############");
+            Console.WriteLine("\n#############1#############"); // test sorting
             var c = new Student();
             c.AddExams(
                 new Exam("Sawdoca", 1, new DateTime(2000, 1, 22)),
@@ -38,7 +38,7 @@ namespace lab_3_2 {
             Console.WriteLine(c);
 
             //2
-            Console.WriteLine("\n#############2#############");
+            Console.WriteLine("\n#############2#############"); // test student Collections
             var coll = new StudentCollection<string>(a => a.ToString());
             coll.AddDefaults();
             Console.WriteLine("Student Collections:");
@@ -65,7 +65,7 @@ namespace lab_3_2 {
             //4
             Console.WriteLine("\n#############4#############");
             int n = 1000000;
-            var test = new TestCollections<Person, Student>(n, j => {
+            var test = new TestCollections<Person, Student>(n, j => { // func to generate unique element
                 var a = new KeyValuePair<Person, Student>(
                     new Person(j + "_name", j + "_surname", new DateTime(2000, 1, 22)),
                     new Student()
@@ -73,10 +73,10 @@ namespace lab_3_2 {
                 return a;
             });
 
-            test.CheckTime(1);
-            test.CheckTime(n/2);
-            test.CheckTime(n);
-            test.CheckTime(n * 2);
+            test.CheckTime(1); // first element
+            test.CheckTime(n/2); // middle element
+            test.CheckTime(n); // last element
+            test.CheckTime(n * 2); // element out of range
         }
     };
 };

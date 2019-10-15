@@ -283,7 +283,7 @@ namespace lab_5_1 {
                 new Exam("Asdwatr", 5, new DateTime(2020, 1, 22))
             );
 
-            var c2 = c1.Deepcopy();
+            var c2 = c1.Deepcopy(); // deepCopy with Serialize
             Console.WriteLine(c1 + "\n");
             Console.WriteLine(c2);
 
