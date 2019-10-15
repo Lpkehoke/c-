@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/aaMy/lol/c#/lab_5_2/cpp/matrix.cpp
+matrix.hpp
+/home/alex/aaMy/lol/c#/lab_5_2/cpp/matrix.hpp
+vector
+-
+cstddef
+-
+thread
+-
+
+/home/alex/aaMy/lol/c#/lab_5_2/cpp/matrix.hpp
+vector
+-
+cstddef
+-
+

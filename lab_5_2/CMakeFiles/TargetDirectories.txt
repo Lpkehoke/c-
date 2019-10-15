@@ -1,0 +1,3 @@
+/home/alex/aaMy/lol/c#/lab_5_2/CMakeFiles/rebuild_cache.dir
+/home/alex/aaMy/lol/c#/lab_5_2/CMakeFiles/Matrix.dir
+/home/alex/aaMy/lol/c#/lab_5_2/CMakeFiles/edit_cache.dir
